@@ -1,0 +1,40 @@
+form{
+    color: aliceblue;
+}
+
+#forma1{
+    text-decoration: underline;
+    padding: 50px;
+    margin: 50px;
+}
+
+.prvi{
+    background-color: rgb(172, 172, 244);
+    padding: 50px;
+    margin: 50px;
+    width: 30%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.drugi{
+    background-color: #FF0000;
+    padding: 50px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.velikaslova{
+    text-transform: uppercase;
+}
+
+.prvi.velikaslova{
+    color: aliceblue;
+}
+
+/*  */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="REFRESH" content="3;https://elab.fon.bg.ac.rs/"> -->
+    <meta name="description" content="kratak opis sajta">
+    <meta name="keywords" content="pasta testenina">
+    <title>Document</title>
+    <style>
+        form{
+            border-width: 3;
+            border-style: dashed;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style01.css">
+</head>
+<body>
+    <h1>Foodmania</h1>
+    <h3>Porucite ovde</h3>
+
+    <!-- ID oznaka #
+         class oznaka . -->
+    <!-- 2 tipa elemenata:
+        1. Block elementi
+        2. Inline elementi -->
+    <!-- 3 nacina za dodavanje CSS-a:
+        1. Inline CSS
+        2. Interni CSS
+        3. Eksterni CSS -->
+    <form style="background-color: lightblue; text-align:center" id="forma1">
+        <label for="customer" class="ime prezime"> <span>Ime i prezime:</span> </label>
+        <input type="text" name="customer" size="35" maxlength="15" id="customer">
+        <div>
+            <label for="password">Sifra:</label>
+            <input type="password" name="password" minlength="8" id="password">
+        </div>
+        
+        
+        Izaberite pol:
+        <br>
+        <input type="radio" name="pol" value="muski"><img src="img/istockphoto-868651322-612x612 (1).jpg" alt="" width="50" height="50">
+        <input type="radio" name="pol" value="zenski"><img src="img/Venus_symbol.svg.png" alt="" width="50" height="50">
+        <br>
+        Izaberite tip sendvica:
+        <br>
+        <input type="radio" name="sandwich" value="cezar">Cezar
+        <br>
+        <input type="radio" name="sandwich" value="tuna" checked>Tuna
+        <br>
+        <input type="radio" name="sandwich" value="kulen">Kulen
+        <br>
+        <input type="radio" name="sandwich" value="indeks">Indeks
+        <br>
+        Izaberite priloge:
+        <br>
+        <input type="checkbox" name="prilozi" value="pavlaka">Pavlaka
+        <br>
+        <input type="checkbox" name="prilozi" value="kecap">Kecap
+        <br>
+        <input type="checkbox" name="prilozi" value="kupus" checked>Kupus
+        <br>
+        <input type="checkbox" name="prilozi" value="majonez">Majonez
+        <br>
+        Dodajte komentar:
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10">Komentar...</textarea>
+        <br>
+        Izaberite nacin placanja:
+        <br>
+        <select name="payment" id="payment">
+            <option value="cash" disabled>Kes</option>
+            <optgroup label="Kartica">
+                <option value="visa">Visa kartica</option>
+                <option value="master">Master kartica</option>
+            </optgroup>
+            
+            <option value="cupons" selected>Kuponi</option>
+        </select>
+        <br>
+        <button type="submit">Poruci</button>
+        <button type="reset">Odustani</button>
+    </form>
+    <div class="prvi velikaslova">Prvi div</div>
+    <div class="drugi">Drugi div</div>
+</body>
+</html>
